@@ -1,0 +1,102 @@
+# ==============================================================================
+# 1. LLAVES PRIVADAS, CERTIFICADOS, TOKENS Y CREDENCIALES (CRÍTICO)
+# ==============================================================================
+*.pem
+*.pem.*
+*.key
+*.key.*
+*.pub
+*.ppk
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+*.der
+id_rsa*
+id_ed25519*
+id_ecdsa*
+id_dsa*
+*credentials*
+*secret*
+*secrets*
+*token*
+*tokens*
+.env
+.env.*
+!.env.example
+aws_credentials
+.aws/
+
+# ==============================================================================
+# 2. ESTADO DE TERRAFORM, LOCKFILES DE EJECUCIÓN Y BACKENDS GENERADOS
+# ==============================================================================
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+backend.hcl
+Scripts/backend.hcl
+*/backend.hcl
+crash.tfstate
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ==============================================================================
+# 3. ARCHIVOS DE RESPALDO, TEMPORALES, LOGS Y ARTEFACTOS DE TERMINAL
+# ==============================================================================
+*.bak
+*.bak.*
+*.backup
+*.old
+*.orig
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.log
+*.out
+*.err
+nohup.out
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# ==============================================================================
+# 4. ARCHIVOS DE SISTEMA OPERATIVO (LINUX / WSL2 / MACOS / WINDOWS)
+# ==============================================================================
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==============================================================================
+# 5. EDITORES, IDEs Y CACHÉS DE HERRAMIENTAS
+# ==============================================================================
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
